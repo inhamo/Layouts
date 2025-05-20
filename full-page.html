@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Layout Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <main class="h-screen w-full overflow-hidden">
+        <nav class="h-[50px] border-2 border-black mb-2 flex items-center justify-between pl-8 pr-[125px]">
+            <div class="font-bold">Logo</div>
+            <ul class="flex space-x-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="main-content flex w-full h-[calc(100%-52px)]">
+            <section class="flex-1 flex flex-col items-start justify-center pl-4 md:pl-10 max-w-[50%]">
+                <div class="w-[70%] border-2 border-black p-6 my-4 text-3xl font-bold">Title Large</div>
+                <div class="w-[65%] p-4 text-base border-2 border-black my-4">Small Content</div>
+                <button class="bg-orange-600 text-white py-3 px-6 my-4 rounded-md cursor-pointer font-semibold text-lg" aria-label="Call to Action Button">Call to Action</button>
+            </section>
+            <section class="flex-1 flex items-center justify-center">
+                <img src="img-placeholder.png" class="w-full max-w-[500px] h-auto border-2 border-black" alt="Placeholder Image">
+            </section>
+        </section>
+    </main>
+</body>
+</html>
